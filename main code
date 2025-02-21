@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class Address {
+class Address{
 private:
     string street;
     string city;
@@ -27,7 +27,7 @@ public:
 #include <string>
 using namespace std;
 
-class Date {
+class Date{
 private:
     int month;
     int day;
@@ -50,7 +50,7 @@ public:
 #include <string>
 using namespace std;
 
-class Student {
+class Student{
 private:
     string firstName;
     string lastName;
@@ -72,8 +72,8 @@ public:
 #include <iostream>
 using namespace std;
 
-int main() {
-    Address address("123 Main St", "Springfield", "IL", "62704");
+int main(){
+    Address address("123 Main St", "Gas City", "IN", "46933");
     Date birth("01/01/2000");
     Date grad("05/15/2024");
     Student student("Hello", "John", "D", address, birth, grad, 120);
