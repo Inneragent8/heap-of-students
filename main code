@@ -1,0 +1,84 @@
+// Address.h
+#ifndef ADDRESS_H
+#define ADDRESS_H
+
+#include <string>
+using namespace std;
+
+class Address {
+private:
+    string street;
+    string city;
+    string state;
+    string zip;
+
+public:
+    Address();
+    Address(string street, string city, string state, string zip);
+    void print() const;
+};
+
+#endif // ADDRESS_H
+
+// Date.h
+#ifndef DATE_H
+#define DATE_H
+
+#include <string>
+using namespace std;
+
+class Date {
+private:
+    int month;
+    int day;
+    int year;
+
+public:
+    Date();
+    Date(string dateStr);
+    void print() const;
+};
+
+#endif // DATE_H
+
+// Student.h
+#ifndef STUDENT_H
+#define STUDENT_H
+
+#include "Address.h"
+#include "Date.h"
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    string firstName;
+    string lastName;
+    Address address;
+    Date birthDate;
+    Date gradDate;
+    int creditHours;
+
+public:
+    Student();
+    Student(string firstName, string lastName, Address address, Date birthDate, Date gradDate, int creditHours);
+    void print() const;
+};
+
+#endif // STUDENT_H
+
+// main.cpp
+#include "Student.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+    Address address("123 Main St", "Springfield", "IL", "62704");
+    Date birth("01/01/2000");
+    Date grad("05/15/2024");
+    Student student("Hello", "John", "D", address, birth, grad, 120);
+
+    student.print();
+
+    return 0;
+}
