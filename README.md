@@ -45,15 +45,15 @@ Address(street, city, state, zip): This constructor initializes an Address objec
 
 print() const: This member function outputs the address information (street, city, state, and zip) to the console.
 
-2. Date class:
-3. 
+Date class:
+   
 Date(): This is a default constructor. It initializes a Date object with default values.
 
 Date(): This constructor initializes a Date object by parsing a string ("01/01/2000") into month, day, and year.
 
 print() const: This function outputs the date in a readable format to the console.
 
-4. Student class:
+Student class:
    
 Student(): This is the default constructor. It initializes a Student object with default values for name, address, birth date, graduation date, and credit hours.
 
@@ -61,6 +61,6 @@ Student(firstName, lastName, address, birthDate, gradDate, creditHours): This co
 
 print() const: This member function prints out the student's details, such as first name, last name, address, birth date, graduation date, and credit hours to the console.
 
-6. main function:
+main function:
    
 main(): This is where the program starts. It creates instances of Address, Date, and Student with sample data and then calls the print() method of the Student class to display the student’s information.
